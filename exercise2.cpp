@@ -15,7 +15,8 @@ int main(){
 		<< "State Tax = $" << stateTaxAmount << endl
 		<< "County Tax = $" << countyTaxAmount << endl
 		<< "Total Payable Tax = $" << totalTaxAmount << endl ;
-
+		
+	return 0;
 }
 
 
