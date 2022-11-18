@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int capacity= 3;
+	int* numbers = new int[capacity];
+	int entries = 0;
+
+	while(true){
+		cout << "Number: " ;
+		cin >> numbers[entries];
+		if (cin.fail()) break;
+		entries++;
+		if(entries == capacity){
+			//Create a temp array (twice the size)
+			int* temp = new int[entries*2];	
+			//Copy all the elements
+			for (int i = 0; i < entries; i++) {
+				temp[i] = numbers[i];
+			}
+			
+			//Have "numbers" pointer point to the new array
+			delete[] numbers;
+			numbers = temp;
+		}
+
+	}
+	for (int i = 0; i < entries; i++) {
+		cout << numbers[i] << endl;
+	}
+	delete[] numbers;
+
+	return 0;
+}
