@@ -10,3 +10,6 @@ string TextBox::getValue(){
 void TextBox::setValue(string str){
 	this->value = str;
 }
+TextBox::TextBox(const string& value) : value{value}{
+
+}
