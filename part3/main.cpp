@@ -1,14 +1,13 @@
 #include <iostream>
-#include "Rectangle.hpp"
+#include "TextBox.h"
 
 using namespace std;
 
 int main(){
-	Rectangle rectangle;
-	rectangle.width = 15;
-	rectangle.height = 50;
+	TextBox textBox;
 
-	cout << rectangle.getArea();
+	textBox.setValue("I love U :)");
+	cout << textBox.getValue();
 
 	return 0;
 }
