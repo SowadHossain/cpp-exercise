@@ -1,10 +1,13 @@
 #include <iostream>
-#include "Lenth.h"
+#include "Point.h"
 
 using namespace std;
 
 int main(){
-	Lenth first{10};
-	Lenth second{20};
+	Point first{10,20};
+	Point second{10,20};
+	
+	cout << (first == second);
+
 	return 0;
 }
