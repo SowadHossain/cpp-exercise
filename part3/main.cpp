@@ -1,13 +1,16 @@
 #include <iostream>
-#include "Point.h"
+#include <compare>
+#include "Length.h"
 
 using namespace std;
 
 int main(){
-	Point first{10,20};
-	Point second{10,20};
-	
-	cout << (first == second);
+	Length first{10};
+	Length second{20};
+
+	if (first < second) {
+		cout<<"fist is smaller";
+	};
 
 	return 0;
 }
