@@ -1,13 +1,11 @@
 #include <iostream>
+#include "SmartPointer.h"
 #include "TextBox.h"
 
 using namespace std;
 
 int main(){
-	TextBox textBox;
-
-	textBox.setValue("I love U :)");
-	cout << textBox.getValue();
+	SmartPointer ptr{new int};
 
 	return 0;
 }
