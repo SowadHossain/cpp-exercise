@@ -1,11 +1,10 @@
 #include <iostream>
-#include "SmartPointer.h"
-#include "TextBox.h"
+#include "Lenth.h"
 
 using namespace std;
 
 int main(){
-	SmartPointer ptr{new int};
-
+	Lenth first{10};
+	Lenth second{20};
 	return 0;
 }
