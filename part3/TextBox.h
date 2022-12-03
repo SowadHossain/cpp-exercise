@@ -2,10 +2,11 @@
 #define TEXT_BOX_H
 #include <iostream>
 #include <string>
+#include "Widget.h"
 
 using namespace std;
 
-class TextBox{
+class TextBox : public Widget{
 public:
 	TextBox() = default;
 	explicit TextBox(const string& value);
