@@ -1,7 +1,8 @@
 #ifndef ADVANCED_RECTANGLE_H
 #define ADVANCED_RECTANGLE_H
+#include "Shape.h"
 
-class Rectangle{
+class Rectangle : public Shape{
 public:
 	void draw();
 	int getArea();
