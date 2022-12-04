@@ -4,7 +4,7 @@
 
 class Rectangle : public Shape{
 public:
-	void draw();
+	void draw() const override;
 	int getArea();
 	//Getter (Accessor)
 	int getWidth();
