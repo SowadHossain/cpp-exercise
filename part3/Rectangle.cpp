@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void Rectangle::draw(){
+void Rectangle::draw() const{
 	cout << "Drawing a rectangle" << endl;
 	cout << "Dimensions: " << width << ',' << height << endl;
 }

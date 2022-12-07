@@ -7,9 +7,10 @@ using namespace std;
 
 class Shape{
 public:
-	virtual void draw() const;
+	virtual void draw() const = 0 ;
 	void setBackground(string background);
 	string getBackground() const;
+
 private:
 	string background;
 };
